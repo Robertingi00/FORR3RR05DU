@@ -23,13 +23,13 @@ def runa(m):
         runa(m-1)
         print(str((m**2 + m)//2), end=" ")
 
-
+"""
 def summa(m):
     if m == 0:
         return 0
     return m**2 + summa(m-1)
-
-
+print(summa(5))
+"""
 def decimalToBinary(num):
     if num > 1:
         decimalToBinary(num // 2)
