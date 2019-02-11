@@ -8,7 +8,7 @@
 Flæku stigið er O(2^n) hvert skipti sem n þá tvöfaldast fjoldi kalla. Ef þú vilt vita hvað að verað mörg kall er jafna (2^n) - 1
 
 
-##3. (3/15) Útskýrðu stuttlega tímaflækjurnar hér fyrir neðan. Nefndu dæmi um reiknirit sem hafa
+## 3. (3/15) Útskýrðu stuttlega tímaflækjurnar hér fyrir neðan. Nefndu dæmi um reiknirit sem hafa
 eftirfarandi tímaflækjur.
 ### a. O(n)
 Þíðir að fallið er n lengi að keyra, þetta er frekar létt reikirit. Þetta reikin rit gæti verið að finna hluti í lista með eina lykkju, þetta gæti verið dæmi um Kadane's algorithm
