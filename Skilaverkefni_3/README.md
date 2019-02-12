@@ -1,14 +1,14 @@
 
 ## 1. (1/15) Hér fyrir neðan er endurkvæmt fall hanoi(n,A,B,C) sem leysir þrautina Tower of Hanoi fyrir n – fjölda diska og súlurnar A, B og C. Skoðaðu fallið vandlega (fallið var skoðað í tíma). Þar fyrir neðan er flæðirit sem lýsir hvernig fallið keyrir þegar diskarnir eru 2. Gerðu samskonar mynd fyrir keyrslu á fallinu þegar diskarnir eru 3.
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/Robertingi00/FORR3RR05DU/blob/master/Skilavekrefni_3/flowchart.png)
 
 ## 2. (1/15) Hver er flækjutími fallsins hanoi(n,A,B,C) í liðnum hér fyrir ofan? Rökstyddu svarið.
 
 Flæku stigið er O(2^n) hvert skipti sem n þá tvöfaldast fjoldi kalla. Ef þú vilt vita hvað að verað mörg kall er jafna (2^n) - 1
 
 
-##3. (3/15) Útskýrðu stuttlega tímaflækjurnar hér fyrir neðan. Nefndu dæmi um reiknirit sem hafa
+## 3. (3/15) Útskýrðu stuttlega tímaflækjurnar hér fyrir neðan. Nefndu dæmi um reiknirit sem hafa
 eftirfarandi tímaflækjur.
 ### a. O(n)
 Þíðir að fallið er n lengi að keyra, þetta er frekar létt reikirit. Þetta reikin rit gæti verið að finna hluti í lista með eina lykkju, þetta gæti verið dæmi um Kadane's algorithm
