@@ -1,7 +1,6 @@
 
 ## 1. (1/15) Hér fyrir neðan er endurkvæmt fall hanoi(n,A,B,C) sem leysir þrautina Tower of Hanoi fyrir n – fjölda diska og súlurnar A, B og C. Skoðaðu fallið vandlega (fallið var skoðað í tíma). Þar fyrir neðan er flæðirit sem lýsir hvernig fallið keyrir þegar diskarnir eru 2. Gerðu samskonar mynd fyrir keyrslu á fallinu þegar diskarnir eru 3.
 
-![alt text](https://github.com/Robertingi00/FORR3RR05DU/blob/master/Skilaverkefni_3/flowchart.png)
 <img src="./flowchart.png">
 
 ## 2. (1/15) Hver er flækjutími fallsins hanoi(n,A,B,C) í liðnum hér fyrir ofan? Rökstyddu svarið.
