@@ -3,8 +3,8 @@
 <head>
 	<title></title>
     <link rel="stylesheet" type="text/css" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     
@@ -53,7 +53,7 @@
                             </p>
                         </div>
                         <div class="takkar">
-                            <input id="lineSearchInput" type="text" name="">
+                            <input id="lineSearchInput" type="text" name="" placeholder="input">
                             <button id="lineSearch">Leita</button>
                         </div>
                         <div class="" id="lineSearchOutput"></div>
@@ -90,7 +90,7 @@
                             <p>}</p>
                         </div>
                         <div class="takkar">
-                            <input id="binarySearchInput" type="text" name="">
+                            <input id="binarySearchInput" type="text" name="" placeholder="input">
                             <button id="binarySearch">Leita</button>
                         </div>
                         <div class="" id="binarySearchOutput"></div>
@@ -114,9 +114,61 @@
                 </li>
             </ul>
         </li>
+
+        <li>
+            <p>5. (2/15) Útfærðu fall sem tekur tölu og setur á réttan stað í raðaðan lista. Ef listi er tómur fer talan fremst. Fallið skal skila True þegar tölu hefur verið bætt í lista.</p>
+            <li class="svar">
+                <div class="javascript">
+                    <div class="code">
+                        <p><span class="blue">var</span> listi = [1,2,3,4,5,6,8,9,10];</p>
+
+                        <p><span class="blue">function</span> <span class="yellow">addToList</span>(<span class="orange">tala</span>){</p>
+                        <p>&nbsp;&nbsp;<span class="red">if</span>(listi.<span class="blue">length</span> < 1 || listi == <span class="blue">undefined</span>){</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;listi[0]  = tala;</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">return</span> <span class="blue">true</span>;</p>
+                        <p>&nbsp;&nbsp;}</p>
+
+                        <p>&nbsp;&nbsp;<span class="red">if</span>(listi[listi.<span class="orange">length</span> - 1] < tala){</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;listi[listi.length] = tala;</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">return</span> <span class="blue">true</span>;</p>
+                        <p>&nbsp;&nbsp;}</p>
+
+                        <p>&nbsp;&nbsp;<span class="red">if</span>(listi[0] > tala){</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;listi.<span class="blue">splice</span>(0, 0, tala);</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">return</span> <span class="blue">true</span>;</p>
+                        <p>&nbsp;&nbsp;}</p>
+
+                        <p>&nbsp;&nbsp;<span class="red">for</span>(i in listi){</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">if</span>(tala <= i){</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;listi.<span class="blue">splice</span>(i,0,tala)</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">return</span> <span class="blue">true</span>;</p>
+                        <p>&nbsp;&nbsp;}</p>
+                        
+                        <p>&nbsp;&nbsp;}</p>
+                        <p>&nbsp;&nbsp;return false;</p>
+                        <p>}</p>
+
+                        
+                    </div>
+                    <div class="takkar">
+                        <input id="addToListInput" type="text" name="" placeholder="input">
+                        <div class="tveirTakkar">
+                            <button id="addToListiId">Bæta við</button>
+                            <button id="addToListiPrint">Prenta Lista</button>
+                        </div>    
+                    </div>
+                    <div class="" id="addToListOutput"></div>
+                          
+                    </div>
+                </div>
+            </li>
+        </li>
         
         <li>
-            <p>5. (2/15) Útfærðu fall sem tekur tölu og setur á réttan stað í raðaðan lista. Ef listi er tómur fer talan fremst. Fallið skal skila True þegar tölu hefur verið bætt í lista</p>
+            <p>6. (3/15) Útfærðu endurkvæmt fall sem leitar að ákveðinni tölu í Binary Search Tree. Hér fyrir neðan eru skilagildi fallsins:</p>
+            <li>a. Ef tréið er tómt (hefur enga rót) ætti fallið að skila False.</li>
+            <li>b. Ef talan sem leitað er að í tréinu er ekki til skilar fallið False.</li>
+            <li>c. Ef talan sem leitað er að í tréinu er til skilar fallið True.</li>
             <li class="svar">
                 <div class="javascript">
                     <div class="code">
@@ -194,7 +246,7 @@
                         <p>t = <span class="red">new</span> Tree;</p>
                     </div>
                     <div class="takkar">
-                        <input id="treeSearchInput" type="text" name="">
+                        <input id="treeSearchInput" type="text" name="" placeholder="input">
                         <div class="tveirTakkar">
                             <button id="treeSearch">Leita</button>
                             <button id="treeInsert">Bætavið</button>

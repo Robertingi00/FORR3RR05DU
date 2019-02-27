@@ -36,6 +36,34 @@ array = [1,2,3,4,5,6,7,8,9,10];
 
 //console.log(lineSearch(array, 9))
 
+var listi = [1,2,3,4,5,6,8,9,10];
+
+function addToList(tala){
+	if(listi.length < 1 || listi == undefined){
+    	listi[0]  = tala;
+    	return true;
+	}
+	console.log(listi[listi.length -1])
+	if(listi[listi.length - 1] < tala){
+		listi[listi.length] = tala;
+		return true
+	}
+	if(listi[0] > tala){
+		listi.splice(0, 0, tala);
+		console.log(2)
+		return true
+	}
+	for(i in listi){
+		if(tala <= i){
+			listi.splice(i,0,tala)
+			return true;
+		}  
+		
+	}
+	return false;
+
+}
+
 
 class Node{
 	constructor(value){

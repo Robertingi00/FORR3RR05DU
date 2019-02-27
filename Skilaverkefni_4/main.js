@@ -15,10 +15,33 @@ const treeInsert = document.getElementById("treeInsert");
 const treeSearchInput = document.getElementById("treeSearchInput");
 const treeSearchOutput = document.getElementById("treeSearchOutput");
 
+const addTolistInput = document.getElementById("addToListInput");
+const addToListiId = document.getElementById("addToListiId");
+const addToListiPrint = document.getElementById("addToListiPrint");
+const addToListOutput = document.getElementById("addToListOutput");
 
 
 
 
+function displayAddToList(){
+	console.log(this)
+	if(addTolistInput.value != ""){
+		let index = addToList(addTolistInput.value);
+		console.log(index);
+		addToListOutput.classList.add("output");
+				
+		addToListOutput.innerHTML = index;
+	}
+}
+
+function displayAddToListPrint(){
+
+	console.log(this)
+	addToListOutput.classList.add("output");
+	
+
+	addToListOutput.innerHTML = listi;
+}
 
 function displayLineSearch(argument) {
 
@@ -63,3 +86,6 @@ binarySearchId.addEventListener("click", displayBinarySearch);
 
 treeInsert.addEventListener("click", displayTreeInsert);
 treeSearch.addEventListener("click", displayTreeSearch);
+
+addToListiId.addEventListener("click", displayAddToList);
+addToListiPrint.addEventListener("click", displayAddToListPrint);
