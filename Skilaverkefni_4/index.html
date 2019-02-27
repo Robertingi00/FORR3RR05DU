@@ -128,24 +128,22 @@
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">return</span> <span class="blue">true</span>;</p>
                         <p>&nbsp;&nbsp;}</p>
 
-                        <p>&nbsp;&nbsp;<span class="red">if</span>(listi[listi.<span class="orange">length</span> - 1] < tala){</p>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;listi[listi.length] = tala;</p>
+                        <p>&nbsp;&nbsp;<span class="red">if</span>(listi[listi.<span class="blue">length</span> -1] < tala){</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;listi[listi.<span class="blue">length</span>] = tala;</p>
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">return</span> <span class="blue">true</span>;</p>
                         <p>&nbsp;&nbsp;}</p>
-
                         <p>&nbsp;&nbsp;<span class="red">if</span>(listi[0] > tala){</p>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;listi.<span class="blue">splice</span>(0, 0, tala);</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;listi.<span class="blue">splice</span>(0,0,tala);</p>
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">return</span> <span class="blue">true</span>;</p>
                         <p>&nbsp;&nbsp;}</p>
-
                         <p>&nbsp;&nbsp;<span class="red">for</span>(i in listi){</p>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">if</span>(tala <= i){</p>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;listi.<span class="blue">splice</span>(i,0,tala)</p>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">return</span> <span class="blue">true</span>;</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">if</span>(tala <= listi[i]){</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;listi.<span class="blue">splice</span>(i,0,tala)</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">return</span> <span class="blue">true</span>;</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;}</p>
                         <p>&nbsp;&nbsp;}</p>
                         
-                        <p>&nbsp;&nbsp;}</p>
-                        <p>&nbsp;&nbsp;return false;</p>
+                        <p>&nbsp;&nbsp;<span class="red">return</span> false;</p>
                         <p>}</p>
 
                         
@@ -153,7 +151,7 @@
                     <div class="takkar">
                         <input id="addToListInput" type="text" name="" placeholder="input">
                         <div class="tveirTakkar">
-                            <button id="addToListiId">Bæta við</button>
+                            <button id="addToListiId" accesskey="">Bæta við</button>
                             <button id="addToListiPrint">Prenta Lista</button>
                         </div>    
                     </div>
