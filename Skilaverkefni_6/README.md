@@ -1,7 +1,7 @@
 # Verkefni 6
 
 ### 1. Heildi og flatarmál.
-[Smelltu hér til að skjá kóðann](https://github.com/Robertingi00/FORR3RR05DU/blob/master/Skilaverkefni_6/Heildi%26Flatarma/heildi.py)
+[Smelltu hér til að skjá kóðann](https://github.com/Robertingi00/FORR3RR05DU/blob/master/Skilaverkefni_6/Heildi%26Flatarma/heildi.py).
 Í þessum hluta skipti ég heilduninni í nokkur skref.
     
 1. Fyrst skrefið er að endurskrifa
@@ -66,7 +66,7 @@
 ___
 
 ### 2. Memoization
-[Smelltu hér til að skjá kóðann](https://github.com/Robertingi00/FORR3RR05DU/blob/master/Skilaverkefni_6/Memoization/memoization.py)
+[Smelltu hér til að skjá kóðann](https://github.com/Robertingi00/FORR3RR05DU/blob/master/Skilaverkefni_6/Memoization/memoization.py).
     Í þessum hluta geri ég BETRI leiðina. frá botni til topps.
 ```pthon
     for i in range(len(input)-2, -1, -1):
@@ -79,7 +79,7 @@ ___
 
 
 ### 3. Binary Search Tree
-[Smelltu hér til að skjá kóðann](https://github.com/Robertingi00/FORR3RR05DU/blob/master/Skilaverkefni_6/BinarySearchTree/binarySearchTree.py)
+[Smelltu hér til að skjá kóðann](https://github.com/Robertingi00/FORR3RR05DU/blob/master/Skilaverkefni_6/BinarySearchTree/binarySearchTree.py).
 Eina sértaka við binary search verkefni er lastNodeRight() og lastNodeLeft().
 Það finnur seinast Nodeið annað hvort til hægri eða vinstri. Eftir hvort það þarf.
     
@@ -137,7 +137,7 @@ Post og preorderPrint er næstum alveg eins einu munurinn er staðsetningin á p
 		print(this.tala)
  ```
 ### 4. Graph
-[Smelltu hér til að skjá kóðann](https://github.com/Robertingi00/FORR3RR05DU/blob/master/Skilaverkefni_6/Graph/Graph.py)
+[Smelltu hér til að skjá kóðann](https://github.com/Robertingi00/FORR3RR05DU/blob/master/Skilaverkefni_6/Graph/Graph.py).
 Ég notaði bara kóðan frá githubinu eins og þú sagðir fyrir grunnin. En ég bjó til mín eigin dfs & bfs. Lýsi því hér fyrir neðan.
     
 1. Dfs.
