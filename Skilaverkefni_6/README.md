@@ -1,7 +1,7 @@
 # Verkefni 6
 
 ### 1. Heildi og flatarmál.
-[Smelltu hér til að skjá kóðann](https://www.google.com)
+[Smelltu hér til að skjá kóðann](https://github.com/Robertingi00/FORR3RR05DU/blob/master/Skilaverkefni_6/Heildi%26Flatarma/heildi.py)
 Í þessum hluta skipti ég heilduninni í nokkur skref.
     
 1. Fyrst skrefið er að endurskrifa
@@ -63,33 +63,29 @@
         3. Reiknaflatarmal().
             Notor flatarmal til að reikna f()-g()
             
-            
-            
-        
-
-
+___
 
 ### 2. Memoization
-[Smelltu hér til að skjá kóðann](https://www.google.com)
+[Smelltu hér til að skjá kóðann](https://github.com/Robertingi00/FORR3RR05DU/blob/master/Skilaverkefni_6/Memoization/memoization.py)
     Í þessum hluta geri ég BETRI leiðina. frá botni til topps.
-    ```pthon
+```pthon
     for i in range(len(input)-2, -1, -1):
         for ii in range(len(input[i])):
             if(input[i+1][ii] > input[i+1][ii+1]):
                 input[i][ii] += input[i+1][ii]
             else:
                 input[i][ii] += input[i+1][ii+1]
-    ```
+ ```
 
 
 ### 3. Binary Search Tree
-[Smelltu hér til að skjá kóðann](https://www.google.com)
+[Smelltu hér til að skjá kóðann](https://github.com/Robertingi00/FORR3RR05DU/blob/master/Skilaverkefni_6/BinarySearchTree/binarySearchTree.py)
 Eina sértaka við binary search verkefni er lastNodeRight() og lastNodeLeft().
 Það finnur seinast Nodeið annað hvort til hægri eða vinstri. Eftir hvort það þarf.
     
 Ef tala sem á að eyða er minn en head þarf delete fallið að nota right annar notar það left.
     
-    ```pthon
+```pthon
     	def lastNodeLeft(this, last=None):
             if(this.left):
                 return this.left.lastNodeLeft(this)
@@ -121,11 +117,11 @@ Ef tala sem á að eyða er minn en head þarf delete fallið að nota right ann
                     this.left.delete(n, upp)
                 else:
                     return -1
-    ```
+ ```
     
 Post og preorderPrint er næstum alveg eins einu munurinn er staðsetningin á print().
     
-    ```pthone
+```pthone
     def preOrderPrint(this):
 		print(this.tala)
 		if(this.left):
@@ -139,9 +135,9 @@ Post og preorderPrint er næstum alveg eins einu munurinn er staðsetningin á p
 		if (this.right):
 			this.right.postOrderPrint()
 		print(this.tala)
-    ```
+ ```
 ### 4. Graph
-[Smelltu hér til að skjá kóðann](https://www.google.com)
+[Smelltu hér til að skjá kóðann](https://github.com/Robertingi00/FORR3RR05DU/blob/master/Skilaverkefni_6/Graph/Graph.py)
 Ég notaði bara kóðan frá githubinu eins og þú sagðir fyrir grunnin. En ég bjó til mín eigin dfs & bfs. Lýsi því hér fyrir neðan.
     
 1. Dfs.
