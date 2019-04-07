@@ -1,12 +1,16 @@
-class Heilda:
+# 1. ( 5/15 ) Heildi og flatarmál
 
-    def __init__(self, f, g, x1, x2):
-        self.f = self.endurSkrifa(f)
-        self.g = self.endurSkrifa(g)
-        self.F = self.heild(self.f)
-        self.G = self.heild(self.g)
-        self.x1 = x1
-        self.x2 = x2
+
+Útfærðu forrit sem tekur inn tvö föll f(x) og g(x) og tvö gildi á talnalínu x1 og x2. Forritið þitt á
+síðan að nota ákveðið heildi til að reikna flatarmál svæðis sem myndast milli f(x) og g(x) á bilinu
+x1 og x2. Dæmi um keyrslu:
+
+
+### Hverning ég leysti þetta.
+
+* Ég byrja á því að endurskrifa föllin f og g. Svo ég enda alltaf með lista með listum með þrem stöðum. Dæmi, þú byrir meða þetta 2x2+2x+2 kalla á fallið og færð þetta [[2,x,2],[2,x],[2,x,1]]
+
+```python
 
     def endurSkrifa(self, f):
         temp = ""
@@ -59,6 +63,11 @@ class Heilda:
                     f2[i][0] = "-1"
 
         return f2
+```
+
+* Næsta skref heilda ég. Þá nota ég heilda fallið.
+
+```python
 
     def heild(self, f):
         tempf = f
@@ -71,34 +80,6 @@ class Heilda:
                 tempf[i][0] = int(tempf[i][0]) / ((int(tempf[i][2])) + 1)
                 tempf[i][2] = int(tempf[i][2]) + 1
         return tempf
+```
 
-    def reikna(self, F, x):
-        value = 0
-        reikna = ""
-        for i in F:
-            if(i[1] == "-x"):
-                if(i[2] % 2 == 0):
-                    value += i[0] * x ** i[2]
-                else:
-                    value += i[0] * -(x ** i[2])
-            else:
-                value += i[0] * x ** i[2]
-
-
-        return value
-
-    def flatarmal(self, F):
-        return self.reikna(F, self.x1) - self.reikna(F, self.x2)
-
-    def Reiknaflatarmal(self):
-        return round(abs(self.flatarmal(self.F) - self.flatarmal(self.G)),2)
-
-    def test(self):
-        return self.reikna(self.F, 3)
-
-
-test = Heilda(input("Sláðu inn fall f(x) = "), input("Sláðu inn fall g(x) = "), int(input("Sláðu inn x fyrir efri mörk svæðis: ")), int(input("Sláðu inn x fyrir neðri mörk svæðis: ")))
-print(" ")
-print("Flatarmálið milli f(x) og g(x) er: {}".format(test.Reiknaflatarmal()))
-
-
+* Svo svara hin sér sjálf.
