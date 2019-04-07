@@ -1,24 +1,24 @@
 # Verkefni 6
 
 ### 1. Heildi og flatarmál.
-
-    Í þessum hluta skipti ég heilduninni í nökkur skref.
+[Smelltu hér til að skjá kóðann](https://www.google.com)
+Í þessum hluta skipti ég heilduninni í nokkur skref.
     
-    1. Fyrst skerfið er að endurskrifa.
+1. Fyrst skrefið er að endurskrifa
     
-        Þegar þú setur inn jöfnu kallast beint á "endurSkrifa()". Það fall skrifar fallið aftur svo ég gæti unnið meða það. Dæmi um keyrslu er hér fyrir neðan.
-        1. Fyrst skerfið er að kalla á classan með f,g,x1,x2.
-            ```python
-            Heilda("-x2+5x-3", x, 3, 1)
-            ```
+    Þegar þú setur inn jöfnu kallast beint á "endurSkrifa()". Það fall skrifar fallið aftur svo ég gæti unnið meðan það. Dæmi um keyrslu er hér fyrir neðan.
+    1. Fyrst skrefið er að kalla á classan með f,g,x1,x2.
+    ```python
+        Heilda("-x2+5x-3", x, 3, 1)
+    ```
             
-        2. Í initinu kallar fallið á endurSkrifa().
-            ```python
-            self.f = self.endurSkrifa(f)
-            self.g = self.endurSkrifa(g)
+    2. Í initinu kallar fallið á endurSkrifa().
+    ```python
+        self.f = self.endurSkrifa(f)
+        self.g = self.endurSkrifa(g)
             ```
-        3. Í endurSkrifan skilar hann fallinu í listum, Dæmi fyrir neðan.
-            if fallið er kallað í með þessu value("-x2+5x-3"). Mynda það skila [[1,-x,2], [1,x,1], [-3]]
+    3. Í endurskrifa skilar hann fallinu í listum, Dæmi fyrir neðan.
+        if fallið er kallað í með þessu value("-x2+5x-3"). Mynda það skila [[1,-x,2], [1,x,1], [-3]]
             
     2. Næst er að heilda.
         Þegar það er búið að heilda í init þá kallar á heilda(f) dæmi fyrir neðan.
@@ -40,10 +40,10 @@
                     tempf[i][2] = int(tempf[i][2]) + 1
             return tempf
             ```
-    3. Seinast er að reikna.
-        Reikna flatarmálið notar 3 föll.
+        3. Seinast er að reikna.
+            Reikna flatarmálið notar 3 föll.
         
-        1. reikna()
+    1. reikna()
             Reiknar fallið með x.
             ```python
             value = 0
@@ -58,7 +58,7 @@
                     value += i[0] * x ** i[2]
             ```
         2. flatarmal()
-            notar reiknar til ad reiknar f(x1)-f(x2)
+            Notar reiknar til að reiknar f(x1)-f(x2)
         
         3. Reiknaflatarmal().
             Notor flatarmal til að reikna f()-g()
@@ -70,8 +70,8 @@
 
 
 ### 2. Memoization
-    
-    Í þessum hluta geri ég BETRI leiðina. frá botni til tops.
+[Smelltu hér til að skjá kóðann](https://www.google.com)
+    Í þessum hluta geri ég BETRI leiðina. frá botni til topps.
     ```pthon
     for i in range(len(input)-2, -1, -1):
         for ii in range(len(input[i])):
@@ -83,10 +83,11 @@
 
 
 ### 3. Binary Search Tree
-    Eina sértaka við binary search verkefni er lastNodeRight() og lastNodeLeft().
-    Það finnur seinast Nodeið annað hvort til hægri eða vinstr. Eftir hvort það þarf.
+[Smelltu hér til að skjá kóðann](https://www.google.com)
+Eina sértaka við binary search verkefni er lastNodeRight() og lastNodeLeft().
+Það finnur seinast Nodeið annað hvort til hægri eða vinstri. Eftir hvort það þarf.
     
-    Ef tala sem á að eyða er minn en head þarf delete fallið að nota right annar notar það left.
+Ef tala sem á að eyða er minn en head þarf delete fallið að nota right annar notar það left.
     
     ```pthon
     	def lastNodeLeft(this, last=None):
@@ -122,7 +123,7 @@
                     return -1
     ```
     
-    Post og preorderPrint er næstum alveg eins einu munurinn er stadsetningin á print().
+Post og preorderPrint er næstum alveg eins einu munurinn er staðsetningin á print().
     
     ```pthone
     def preOrderPrint(this):
@@ -140,12 +141,13 @@
 		print(this.tala)
     ```
 ### 4. Graph
-
-    Ég notaði bara kóðan frá githubinu eins og þú sagðir fyrir grunnin. En ég bjó til mín eigin dfs & bfs. Lýsi því hér fyrir neðan.
+[Smelltu hér til að skjá kóðann](https://www.google.com)
+Ég notaði bara kóðan frá githubinu eins og þú sagðir fyrir grunnin. En ég bjó til mín eigin dfs & bfs. Lýsi því hér fyrir neðan.
     
-    1. Dfs
-        Ef þú vilt prenta með dfs. Þá kallarðu í Graph dfs fallið. Það býr til dictionary sem heldur utnam um hvaða verexa er búið að heimsækja, það er eina sem er öðruvísi.
-        ```python
+1. Dfs.
+Ef þú vilt prenta með dfs. Þá kallarðu í Graph dfs fallið. Það býr til dictionary sem heldur utnam um hvaða verexa er búið að heimsækja, það er eina sem er öðruvísi.
+    
+```python
         def _dfs(self, vertex, visited):
             if(vertex not in visited):
                 visited[vertex] = vertex
@@ -157,10 +159,12 @@
         def dfs(self, vertex):
             visited = {}
             self._dfs(vertex,visited)
-        ``` 
-    2.Bfs
-        Bfs er svipað og dfs nema listin sem hann geimir. Ég nota aftur dictionary til að halda utanum þá vertexa sem ég ef heimsækjað. Q er listi sem heldur utan um hvað vertex á að skoða næst
-        ```python
+            
+``` 
+2.Bfs.
+
+Bfs er svipað og dfs nema listin sem hann geymir. Ég nota aftur dictionary til að halda utan um þá vertexa sem ég ef heimsækja. Q er listi sem heldur utan um hvað vertex á að skoða næst. Q er ekki fullkomið en það virkar. Það er það sem skiptir máli. Nennti ekki að laga það :).
+```python
         def bfs(self, vertex):
             visited = {}
             q = []
@@ -180,4 +184,4 @@
 
                 for i in q:
                         self._bfs(i, visited, q)
-        ```
+```
